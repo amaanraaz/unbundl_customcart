@@ -45,7 +45,7 @@ export const chocolates = [
       image: 'https://m.media-amazon.com/images/I/71jjJVtqKKL._SL1500_.jpg'
     },
     {
-      name: 'Hershey\'s Milk Chocolate',
+      name: 'Hershey\'s Chocolate',
       price: 50,
       image: 'https://m.media-amazon.com/images/I/81iF3qPSl5L._SL1500_.jpg'
     }
