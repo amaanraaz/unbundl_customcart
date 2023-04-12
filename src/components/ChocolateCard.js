@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
 
 const ChocolateCard = ({
+    // destructuring the props passed to this component
     name,price,image,setTotal,total,totalPrice,setTotalPrice
 }) => {
+    // counter variable for taking count of each chocolate card individually
     const [count,setCount] = useState(0);
+
+    // function triggered of clicking +
     const increaseCount=()=>{
         if(total===8)alert("You can add only 8 items in a custom pack");
         else{
@@ -11,12 +15,15 @@ const ChocolateCard = ({
         setTotal(total+1);
         setTotalPrice(totalPrice+price);}
     }
+
+    // function triggered of clicking +
     const decreaseCount=()=>{
         count===0?setCount(0):setCount(count-1);
         count===0?setCount(0):setTotal(total-1);
         count===0?setCount(0):setTotalPrice(totalPrice-price);
     }
   return (
+    // card component 
     <div className='w-72 h-80 m-5 bg-gradient-to-br from-pink to-fuchsia-300 p-7
     shadow-gray-600 shadow-md rounded-md'>
         <img src={image} alt='image1' />
